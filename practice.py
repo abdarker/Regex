@@ -9,7 +9,15 @@ with open('data.txt', 'r', encoding='utf-8') as f:
    # matches = pattern.match(contents) #at the beginning / no need for loop  can direct print  print(matches)
    # matches = pattern.search(contents) # no need for loop, can direct print  print(matches)
 
+    subb = pattern.sub(r'\1\2', contents)
+
 
 
     for match in matches:
         print(match)
+        
+    for match in matches:
+    print(match.group(2))
+    
+    
+    #print("geeks", end =" ")
